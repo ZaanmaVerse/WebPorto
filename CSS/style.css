@@ -330,22 +330,16 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.skill-card1 {
-  background: #1f1f1f;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 0 15px rgba(0, 255, 200, 0.05);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  border-left: 5px solid #0026ff;
+.skill-card1 h3 {
+  color: #0026ff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
-.skill-card2 {
-  background: #1f1f1f;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 0 15px rgba(0, 255, 200, 0.05);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  border-left: 5px solid #00ffc8;
+.skill-card2 h3 {
+  color: #00ffc8;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .skill-card ul {
