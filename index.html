@@ -372,6 +372,7 @@ The system is built using the Python programming language, utilizing Machine Lea
     <input type="text" name="name" placeholder="Your Name" required />
     <input type="email" name="email" placeholder="Your Email" required />
     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <div class="g-recaptcha" data-sitekey="6LfjgnErAAAAANVJCUmGRXTkFFRz7ufK6s6azGpB"></div>
     <button type="submit">Send Message</button>
   </form>
 
@@ -388,6 +389,7 @@ The system is built using the Python programming language, utilizing Machine Lea
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="JS/script.js"></script>
   <script>
     AOS.init({ duration: 1200, once: true });
