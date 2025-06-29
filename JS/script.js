@@ -78,8 +78,9 @@ navMenu.classList.toggle("active");
 });
 
 const cursorDot = document.querySelector(".cursor-dot");
-  const cursorOutline = document.querySelector(".cursor-outline");
+const cursorOutline = document.querySelector(".cursor-outline");
 
+if (window.innerWidth > 768) {
   document.addEventListener("mousemove", e => {
     const { clientX, clientY } = e;
     cursorDot.style.top = `${clientY}px`;
@@ -87,12 +88,8 @@ const cursorDot = document.querySelector(".cursor-dot");
     cursorOutline.style.top = `${clientY}px`;
     cursorOutline.style.left = `${clientX}px`;
   });
-
-if (window.innerWidth > 768) {
-  window.addEventListener("mousemove", (e) => {
-    cursorDot.style.left = e.clientX + "px";
-    cursorDot.style.top = e.clientY + "px";
-    cursorOutline.style.left = e.clientX + "px";
-    cursorOutline.style.top = e.clientY + "px";
-  });
+} else {
+  cursorDot.style.display = "none";
+  cursorOutline.style.display = "none";
+  document.body.style.cursor = "none";
 }
