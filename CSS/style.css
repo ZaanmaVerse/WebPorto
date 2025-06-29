@@ -863,3 +863,28 @@ footer {
   color: #ccc;
   line-height: 1.4;
 }
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: #00ffd5;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-outline {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #00ffd5;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+}
