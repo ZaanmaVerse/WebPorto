@@ -76,3 +76,14 @@ const navMenu = document.getElementById("navMenu");
 hamburger.addEventListener("click", () => {
 navMenu.classList.toggle("active");
 });
+
+const cursorDot = document.querySelector(".cursor-dot");
+  const cursorOutline = document.querySelector(".cursor-outline");
+
+  document.addEventListener("mousemove", e => {
+    const { clientX, clientY } = e;
+    cursorDot.style.top = `${clientY}px`;
+    cursorDot.style.left = `${clientX}px`;
+    cursorOutline.style.top = `${clientY}px`;
+    cursorOutline.style.left = `${clientX}px`;
+  });
