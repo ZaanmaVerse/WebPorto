@@ -111,7 +111,7 @@ body {
 
 .hamburger span {
   height: 3px;
-  background: white;
+  background: #00ffc8;
   width: 100%;
   border-radius: 2px;
 }
