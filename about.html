@@ -13,6 +13,7 @@
 <body>
   <div class="cursor-dot"></div>
   <div class="cursor-outline"></div>
+  
   <header>
     <div class="stack-logo">
       <img src="assets/icons/z.png"/>
@@ -42,7 +43,13 @@
 
   <section id="about" data-aos="zoom-out" class="badges">
     <div class="stars" id="stars-container"></div>
+    <div class="about-container">
     <h2>About Me</h2>
+<div class="about-flex">
+  <div class="about-photo">
+    <div class="photo-mask"></div>
+  </div>
+  <div class="about-text">
     <p>
       I am an Information Technology student with a strong passion for cybersecurity and digital threat defense.
       I specialize in building threat detection systems, monitoring network activity, and analyzing vulnerabilities across IT environments. 
@@ -54,6 +61,20 @@
       I actively seek opportunities to apply my knowledge, contribute to cybersecurity initiatives, and grow through practical learning and collaboration. 
       I'm excited to support organizations in strengthening their digital infrastructure and responding to modern cyber threats.
     </p>
+  </div>
+</div>
+  
+  <div class="gallery-slider" data-aos="fade-up">
+  <div class="slides">
+    <img src="assets/images/galery4.jpg" alt="Gallery 1">
+    <img src="assets/images/galery2.jpg" alt="Gallery 2">
+    <img src="assets/images/galery.jpg" alt="Gallery 3">
+    <img src="assets/images/galery1.jpg" alt="Gallery 4">
+  </div>
+  <button class="prev" onclick="prevSlide()">❮</button>
+  <button class="next" onclick="nextSlide()">❯</button>
+  </div>
+  
     <div class="summary-cards">
   <div class="card">
     <i class="fas fa-graduation-cap"></i>
@@ -98,6 +119,7 @@
         Issued On jul 2024 - Pelatihan Generative AI for Information System Thematic Academy Digital talent Scholarship 2024</span>
     </div>
   </div>
+  </div>
   </section>
 
   <footer>
@@ -105,7 +127,6 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="JS/script.js"></script>
   <script>
     AOS.init({ duration: 1200, once: true });
