@@ -20,8 +20,8 @@
     </div>
     <nav class="nav-links">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -41,23 +41,84 @@
 </nav>
   </header>
 
-  <section id="home" class="hero" data-aos="zoom-in">
+  <section id="about" data-aos="zoom-out" class="badges">
     <div class="stars" id="stars-container"></div>
+    <div class="about-container">
+    <h2>About Me</h2>
+<div class="about-flex">
+  <div class="about-photo">
     <div class="photo-mask"></div>
-    <h2>Hello, I'm Zaidan Mahfudz Azzam</h2>
-    <p class="hero-subtitle">
-      <span id="typing-text"></span><span class="cursor">|</span>
+  </div>
+  <div class="about-text">
+    <p>
+      I am an Information Technology student with a strong passion for cybersecurity and digital threat defense.
+      I specialize in building threat detection systems, monitoring network activity, and analyzing vulnerabilities across IT environments. 
+      My experience includes working on real world projects such as a SIEM Integration using Wazuh and Suricata, and developing a Machine Learning based Phishing Detection System.
     </p>
-    <div class="buttons">
-      <a href="portfolio.html">View Portfolio</a>
-      <a href="contact.html">Hire Me</a>
-      <a href="assets/CV_Zaidan_Mahfudz_Azzam.pdf" download class="btn">📄 CV</a>
+    <br>
+    <p>
+      These projects have sharpened my skills in network security, log analysis, and threat intelligence. 
+      I actively seek opportunities to apply my knowledge, contribute to cybersecurity initiatives, and grow through practical learning and collaboration. 
+      I'm excited to support organizations in strengthening their digital infrastructure and responding to modern cyber threats.
+    </p>
+  </div>
+</div>
+  
+  <div class="gallery-slider" data-aos="fade-up">
+  <div class="slides">
+    <img src="assets/images/galery4.jpg" alt="Gallery 1">
+    <img src="assets/images/galery2.jpg" alt="Gallery 2">
+    <img src="assets/images/galery.jpg" alt="Gallery 3">
+    <img src="assets/images/galery1.jpg" alt="Gallery 4">
+  </div>
+  <button class="prev" onclick="prevSlide()">❮</button>
+  <button class="next" onclick="nextSlide()">❯</button>
+  </div>
+  
+    <div class="summary-cards">
+  <div class="card">
+    <i class="fas fa-graduation-cap"></i>
+    <h4>Education</h4>
+    <p>President University</p>
+    <p>2023 - Present</p>
+    <p>S1-Information Technology</p>
+    <p>Cybersecurity Semester: 6</p>
+    <p>IPK: 3.68 / 4.00</p>
+  </div>
+  <div class="card">
+    <i class="fas fa-tools"></i>
+    <h4>Experience</h4>
+    <p>Project: SIEM (Wazuh & Suricata), Phishing Detector</p>
+  </div>
+  <div class="card">
+    <i class="fas fa-user-shield"></i>
+    <h4>Specialized In</h4>
+    <p>Cybersecurity, Threat Detection, Penetration Testing, AI Engineer, Frontend Web Dev</p>
+  </div>
+  <div class="card">
+    <i class="fas fa-language"></i>
+    <h4>Languages</h4>
+    <p>Bahasa Indonesia (Native), English (Intermediate)</p>
+  </div>
+  </div>
+    <h2></h2>
+    <h2 class="section-title">Certifications</h2>
+  <div class="badge-grid">
+    <div class="badge-item">
+      <img src="assets/images/cisco.png" alt="Cisco Certified">
+      <span>Issued On Jun 2025 - Introduction to Cybersecurity</span>
     </div>
-  <div class="social-sidebar">
-  <a href="mailto:zaidanmahfudz26@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-  <a href="https://linkedin.com/in/zaidanmahfudz" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-  <a href="https://instagram.com/zaanmhfdz" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://github.com/ZaanmaVerse" target="_blank"><i class="fab fa-github"></i></a>
+    <div class="badge-item">
+      <img src="assets/images/BSSN.png" alt="BSS Certified">
+      <span>
+        Issued On Mei 2025 - Awareness of Social Cyber Attacks in Educational Settings: Insights from BSSN Incidents, Practical Tips & Tricks, and Reporting Mechanisms</span>
+    </div>
+    <div class="badge-item">
+      <img src="assets/images/digitalent.png" alt="DigitalentXKominfo Certified">
+      <span>
+        Issued On jul 2024 - Pelatihan Generative AI for Information System Thematic Academy Digital talent Scholarship 2024</span>
+    </div>
+  </div>
   </div>
   </section>
 
@@ -66,7 +127,6 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="JS/script.js"></script>
   <script>
     AOS.init({ duration: 1200, once: true });
