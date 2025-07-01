@@ -164,3 +164,11 @@ const canvas = document.getElementById("matrixRain");
     // Toggle current
     desc.style.display = (desc.style.display === "block") ? "none" : "block";
   }
+
+document.querySelector("form").addEventListener("submit", function(e) {
+  const captchaResponse = grecaptcha.getResponse();
+  if (!captchaResponse) {
+    e.preventDefault();
+    alert("Please verify that you are not a robot.");
+  }
+});
