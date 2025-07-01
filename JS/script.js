@@ -165,10 +165,10 @@ const canvas = document.getElementById("matrixRain");
     desc.style.display = (desc.style.display === "block") ? "none" : "block";
   }
 
-document.querySelector("form").addEventListener("submit", function(e) {
-  const captchaResponse = grecaptcha.getResponse();
-  if (!captchaResponse) {
-    e.preventDefault();
-    alert("Please verify that you are not a robot.");
-  }
-});
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    var captchaResponse = grecaptcha.getResponse();
+    if (captchaResponse.length === 0) {
+      e.preventDefault(); // Mencegah form terkirim
+      alert("Please verify that you are not a robot.");
+    }
+  });
