@@ -151,3 +151,16 @@ const canvas = document.getElementById("matrixRain");
   }
 
   setInterval(draw, 33);
+
+  function toggleSkill(card) {
+    const container = card.parentElement;
+    const desc = container.querySelector('.skill-description');
+    
+    // Close others
+    document.querySelectorAll('.skill-description').forEach(el => {
+      if (el !== desc) el.style.display = "none";
+    });
+
+    // Toggle current
+    desc.style.display = (desc.style.display === "block") ? "none" : "block";
+  }
