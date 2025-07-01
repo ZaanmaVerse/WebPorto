@@ -165,13 +165,19 @@ const canvas = document.getElementById("matrixRain");
     desc.style.display = (desc.style.display === "block") ? "none" : "block";
   }
 
-window.onload = function() {
-    const form = document.getElementById("contact-form");
-    form.addEventListener("submit", function(e) {
-      var captchaResponse = grecaptcha.getResponse();
-      if (captchaResponse.length === 0) {
-        e.preventDefault();
-        alert("Please verify that you are not a robot.");
-      }
-    });
-  };
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  const gotcha = document.querySelector('input[name="_gotcha"]').value;
+  const captcha = grecaptcha.getResponse();
+
+  if (gotcha !== "") {
+    e.preventDefault(); // Bot terperangkap
+    alert("Spam terdeteksi.");
+    return;
+  }
+
+  if (captcha.length === 0) {
+    e.preventDefault();
+    alert("Silakan centang kotak 'Saya bukan robot'.");
+  }
+});
+
