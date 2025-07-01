@@ -43,18 +43,53 @@
 
   <section id="skills" class="skills" id="techstack" data-aos="zoom-in" style="background:#111; padding: 100px 10% 50px;">
   <div class="stars" id="stars-container"></div>
-  <h2>My Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card" data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="skills-grid" data-aos="zoom-in">
+  <div class="skill-card-container">
+    <div class="skill-card" onclick="toggleSkill(this)">
       <h3><i class="fas fa-code"></i> Programming</h3>
     </div>
-    <div class="skill-card" data-aos="fade-up">
-      <h3><i class="fas fa-shield-alt"></i> Cybersecurity Tools</h3>
-    </div>
-    <div class="skill-card" data-aos="fade-up">
-      <h3><i class="fas fa-tools"></i> Dev Tools</h3>
+    <div class="skill-description">
+      <h4>🧠 Programming</h4>
+      <ul>
+        <li>Python – Data Science, AI, Web</li>
+        <li>JavaScript – Frontend & Backend</li>
+        <li>PHP – Web Development</li>
+        <li>C++ – Competitive Programming</li>
+      </ul>
     </div>
   </div>
+
+  <div class="skill-card-container">
+    <div class="skill-card" onclick="toggleSkill(this)">
+      <h3><i class="fas fa-shield-alt"></i> Cybersecurity Tools</h3>
+    </div>
+    <div class="skill-description">
+      <h4>🛡️ Cybersecurity Tools</h4>
+      <ul>
+        <li>Wazuh – Host-based IDS</li>
+        <li>Suricata – Network-based IDS</li>
+        <li>Wireshark – Packet Analysis</li>
+        <li>Burp Suite – Web Security Testing</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="skill-card-container">
+    <div class="skill-card" onclick="toggleSkill(this)">
+      <h3><i class="fas fa-tools"></i> Dev Tools</h3>
+    </div>
+    <div class="skill-description">
+      <h4>🧰 Dev Tools</h4>
+      <ul>
+        <li>Visual Studio Code</li>
+        <li>Git & GitHub</li>
+        <li>Postman – API Testing</li>
+        <li>Docker – Containerization</li>
+      </ul>
+    </div>
+  </div>
+</div>
   <h2></h2>
   <div class="skills-container">
     <div class="skill">
@@ -164,7 +199,7 @@
       <span>Autopsy</span>
     </div>
   </div>
-</section>
+  </section>
 
   <footer>
     &copy; 2025 Zaidan Mahfudz. All rights reserved.
