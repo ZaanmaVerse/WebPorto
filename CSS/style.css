@@ -370,19 +370,48 @@ h2 {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 2rem;
+  justify-content: center;
+}
+
+.skill-card-container {
+  width: 300px;
 }
 
 .skill-card {
-  background: #1f1f1f;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 0 15px rgba(0, 255, 200, 0.05);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  border-left: 5px solid #e0faff;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00ffe0;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: #1a1a1a;
+}
+
+.skill-description {
+  display: none;
+  margin-top: 10px;
+  background: #0f0f0f;
+  padding: 15px;
+  border-left: 3px solid #00ffe0;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.skill-description ul {
+  padding-left: 1.2rem;
+}
+
+.skill-description h4 {
+  margin-bottom: 0.5rem;
+  color: #00ffe0;
 }
 
 .skill-card:hover {
@@ -424,7 +453,7 @@ h2 {
 
 .skills h2 {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #00ffc8;
 }
@@ -591,30 +620,10 @@ h2 {
 }
 
 /* Warna untuk masing-masing teknologi */
-.badge.html {
-  background-color: #e53935;
+.badge.logo {
+  background-color: #175053;
 }
-.badge.css {
-  background-color: #00aaff;
-}
-.badge.javascript {
-  background-color: #00990f;
-}
-.badge.python {
-  background-color: #fe8700;
-}
-.badge.ubuntu {
-  background-color: #8d4e00;
-}
-.badge.wazuh {
-  background-color: #0080c0;
-}
-.badge.suricata {
-  background-color: #c67a00;
-}
-.badge.kaliLinux {
-  background-color: #4e4f50;
-}
+
 .card-content {
   padding: 1rem;
 }
