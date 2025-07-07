@@ -592,6 +592,7 @@ h2 {
   align-items: start;
 }
 .project-card {
+  position: relative;
   background: #1a1a1a;
   border-radius: 12px;
   overflow: hidden;
@@ -635,6 +636,14 @@ h2 {
   font-weight: 600;
   color: #f1eaea;
   display: inline-block;
+}
+
+.view-details-link {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
 }
 
 /* Warna untuk masing-masing teknologi */
